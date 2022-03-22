@@ -38,10 +38,12 @@ void main()
 			}
 			else
 			{
+				printf("\nCollision Detected!\n");
 				for (j = loc + 1; j % 10<10; j++)
 				{
 					if (rec[j % 10].flag == 0)
 					{
+						printf("The address of %d record is %d\n",i+1,j%10);
 						strcpy(rec[j % 10].name, name);
 						rec[j % 10].usn = usn;
 						rec[j % 10].flag = 1;
